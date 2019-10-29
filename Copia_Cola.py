@@ -2,7 +2,6 @@
 class cola:
     __listaCola = []
     __CopiaCola = []
-
 #Metodo insertar que nos servira para insertar los datos
     def Insertar(self, elemento):
         self.__listaCola.append(elemento)
@@ -34,10 +33,8 @@ class cola:
         for x in range(0, len(self.__listaCola)):
 #En esta linea se insertan los elementos que estan en la ListaCola, con el .append, para generar la copia.
             self.__CopiaCola.append(self.__listaCola[x])
-
         print('la cola a copiar es:', self.__CopiaCola)
         print('Su copia es: ',self.__CopiaCola)
-
 
 cola = cola()
 cola.Insertar(7.2)
